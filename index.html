@@ -1,406 +1,194 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>Harte&#39;树洞 | 一个HR的从业记录</title>
+    
+<link rel="stylesheet" href="/css/reset.css">
 
-<head>
+    
+<link rel="stylesheet" href="/css/style.css">
 
-  <!-- Minima -->
-  <!-- Hexo theme created by @adisaktijrs -->
+    
+<link rel="stylesheet" href="/css/markdown.css">
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
+    
+<link rel="stylesheet" href="/css/fonts.css">
 
-  
-  <title>Harte</title>
-  
-  <link rel="sitemap" href="http://example.comsitemap.xml,sitemap.txt" />
-  
-  <link rel="canonical" href="http://example.com/">
-  
-  <meta name="description" content="">
-  
-  
-  <meta name="author" content="John Doe">
-  
-  
-  <meta property="og:image" content="http://example.com/images/thumbnail.jpg">
-  
-  
-  <meta property="og:site_name" content="Harte" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Harte" />
-  
-  <meta property="og:description" content="">
-  
-  <meta property="og:url" content="http://example.com/" />
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Harte">
-  
-  <meta name="twitter:description" content="">
-  
-  
-  
-  <meta name="twitter:image" content="http://example.com/images/thumbnail.jpg">
-  
-  
-  <meta name="twitter:url" content="http://example.com/" />
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Preload fonts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="preload" href="/fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-<link rel="stylesheet" href="/css/normalize.css">
-
-  
-<link rel="stylesheet" href="/css/skeleton.css">
-
-  
-<link rel="stylesheet" href="/css/custom.css">
-
-  
-<link rel="stylesheet" href="/css/prism-dark.css">
-
-  
-<link rel="stylesheet" href="/css/prism-line-numbers.css">
-
-  <!-- User css -->
-  
-  
-<link rel="stylesheet" href="/css/user.css">
-
-  
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="/images/favicon.png">
-
-  <!-- Custom Theme Color Style
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <style>
-  a:not(.icon) {
-    text-decoration-color: #0FA0CE;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 50%,
-      #0FA0CE 50%
-    );
-  }
-  blockquote {
-    border-left: 8px solid #0FA0CE;
-  }
-  .nanobar .bar {
-    background: #0FA0CE;
-  }
-  .button.button-primary:hover,
-  button.button-primary:hover,
-  input[type="submit"].button-primary:hover,
-  input[type="reset"].button-primary:hover,
-  input[type="button"].button-primary:hover,
-  .button.button-primary:focus,
-  button.button-primary:focus,
-  input[type="submit"].button-primary:focus,
-  input[type="reset"].button-primary:focus,
-  input[type="button"].button-primary:focus {
-    background-color: #0FA0CE;
-    border-color: #0FA0CE;
-  }
-  input[type="email"]:focus,
-  input[type="number"]:focus,
-  input[type="search"]:focus,
-  input[type="text"]:focus,
-  input[type="tel"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  textarea:focus,
-  select:focus {
-    border: 1px solid #0FA0CE;
-  }
-</style>
-
-  <!-- Google Analytics (With Privacy Settings On)
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-
-  
-  <script src="/js/pic.min.js" defer></script>
-  
-
-  
-
-<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Harte" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Harte'树洞" type="application/atom+xml">
 </head>
-
-<body>
-  <div class="container">
-    <div class="row">
-      <div>
-
-        <div class="row">
-  <div class="two columns" style="max-width: 50px">
-    <h1 class="mt-2 mode">
-      <div onclick=setDarkMode(true) id="darkBtn">🌑</div>
-      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>☀️</div>
-      <script >
-        if (localStorage.getItem('preferredTheme') == 'dark') {
-          setDarkMode(true)
-        }
-        function setDarkMode(isDark) {
-          var darkBtn = document.getElementById('darkBtn')
-          var lightBtn = document.getElementById('lightBtn')
-          if (isDark) {
-            lightBtn.style.display = "block"
-            darkBtn.style.display = "none"
-            localStorage.setItem('preferredTheme', 'dark');
-          } else {
-            lightBtn.style.display = "none"
-            darkBtn.style.display = "block"
-            localStorage.removeItem('preferredTheme');
-          }
-          document.body.classList.toggle("darkmode");
-        }
-      </script>
-    </h1>
-  </div>
-
-  <div class="six columns ml-1">
-    <h1 class="mt-2">
-      日拱一卒
-    </h1>
-  </div>
-
-  <div class="twelve columns">
-    <div class="row">
-      <div class="nine columns left">
- 	<a href="/">首页</a>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="header">
+    <a class="logo" href="/">Harte&#39;树洞</a>
+    <ul class="nav">
         
+        <li><a href="/">首页</a></li>
         
-      </div>
-    </div>
-    <hr style="margin-bottom: 2.6rem">
-  </div>
+        <li><a href="/archives">归档</a></li>
+        
+    </ul>
 </div>
-
-        <div class="trans">
-          <div class="row">
-  <div class="column">
-    <!-- Main information, edit it on theme/_config.yml -->
-    <h2 class="mb-2"></h2>
-    <p>一枚人力资源从业者🇨🇳</p>
-    <p>积累跬步,立于现实,改变未来。</p>
-  </div>
-</div>
-
-<h3>---最近更新---</h3>
-
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2022年8月4日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2022/08/04/%E6%83%B3%E9%80%9A%E8%BF%87%E5%A4%8D%E7%9B%98%E6%8F%90%E5%8D%87%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8F%8D%E6%80%9D%E6%B7%B1%E5%BA%A6%EF%BC%882022%E5%B9%B48%E6%9C%884%E6%97%A5%201027%EF%BC%89/" >
-      
-        no title
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2022年8月2日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2022/08/02/2022-8-3-%E8%B4%B9%E9%87%8C%E6%96%AF%E7%9A%8411%E4%B8%AA%E5%A5%BD%E9%97%AE%E9%A2%98/" >
-      
-        no title
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2020年12月16日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2020/12/16/2020-12-16-%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%906P%E6%A8%A1%E5%9E%8B/" >
-      
-        人力资源6B模型
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2020年12月10日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2020/12/10/2020-12-11-GXM%E6%94%BF%E5%A7%94%E8%AE%AD%E7%BB%83%E8%90%A5%E7%AC%AC%E4%B8%80%E6%9C%9F/" >
-      
-        GXM政委训练营第一期
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2020年12月10日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2020/12/10/2020-12-11-%E4%B8%89%E5%A4%A7%E7%AE%A1%E7%90%86%E5%A4%A7%E5%B8%88%E4%B8%80%E6%9C%AC%E6%90%9E%E5%AE%9A/" >
-      
-        三大管理大师一本搞定
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2020年12月1日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2020/12/01/2020-12-1-%E6%88%91%E5%9B%BDHRBP%E8%83%9C%E4%BB%BB%E5%8A%9B%E7%A0%94%E7%A9%B6/" >
-      
-        我国 HRBP 胜任力研究
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2020年10月29日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2020/10/29/2020-10-30-%E5%AD%A6%E4%B9%A0%E9%9A%8F%E7%AC%94/" >
-      
-        学习随笔
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2019年3月29日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2019/03/29/2019-03-29-%E5%AE%9E%E4%B9%A0%E6%80%BB%E7%BB%93/" >
-      
-        实习总结（文静）
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2018年9月20日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2018/09/20/2018-09-20-%E5%85%B3%E4%BA%8E%E7%BE%A4%E9%9D%A2/" >
-      
-        关于群面（文静整理）
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2018年9月20日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2018/09/20/2018-09-20-%E9%9D%A2%E8%AF%95%E9%82%80%E7%BA%A6/" >
-      
-        关于约面（黎媛整理）
-      
-    </a>
-  </div>
-</div>
-
-
-<h4> <a href="/archives">更多...</a></h4>
-
+                
+                <div class="post-list">
+    
+    <div class="post">
+        <a class="post-title" href="/2022/08/04/%E6%83%B3%E9%80%9A%E8%BF%87%E5%A4%8D%E7%9B%98%E6%8F%90%E5%8D%87%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8F%8D%E6%80%9D%E6%B7%B1%E5%BA%A6%EF%BC%882022%E5%B9%B48%E6%9C%884%E6%97%A5%201027%EF%BC%89/"></a>
+        <div class="post-except">
+            想通过复盘提升自己的反思深度（2022年8月4日 10:27）为什么要记录这个话题？    1. 跟Kevin合作有3个季度了，其中一个印象比较深刻的点是他的思维方式和学习框架，一开始觉得他这是在故意把问题复杂化，但是经过这段时间的搭档，也发现了框架思考的好处，那就是能更系统化，更全面更深入的看待问题。Kevin的思考方式平时运用到了他的日报和对问题的反思上，包括跟他一起面试，提问的逻辑和深入度，确实体现出来了框架思考的优势；    2. 另外一个例子就是近期kevin在管理
+            <a class="read-more" href="/2022/08/04/%E6%83%B3%E9%80%9A%E8%BF%87%E5%A4%8D%E7%9B%98%E6%8F%90%E5%8D%87%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8F%8D%E6%80%9D%E6%B7%B1%E5%BA%A6%EF%BC%882022%E5%B9%B48%E6%9C%884%E6%97%A5%201027%EF%BC%89/"> ... </a>
         </div>
-        <div class="row mt-2">
-  
- 
+        <div class="post-date">2022.08.04</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2022/08/02/2022-8-3-%E8%B4%B9%E9%87%8C%E6%96%AF%E7%9A%8411%E4%B8%AA%E5%A5%BD%E9%97%AE%E9%A2%98/"></a>
+        <div class="post-except">
+            费里斯的11个好问题或许跟我一样，偶尔会思考以下几个问题：如果你对面坐着一个跟你不是特别熟悉的前辈，你不想尴尬，必须和对方聊点什么的时候，你该怎么提问？ 如果你跟公司CEO同时走进电梯，你可以跟他聊些什么话题？ 不让对方感觉尴尬，又能让你从中获益的问题有哪些？
+有个美国人蒂姆、费里斯，他40岁那年遭遇了中年危机，感觉人生失去了方向。他心里有很多的问题，却不知道该问谁。他突然想到，”如果我拥有一个导师天团来帮助我，那会怎么样？“于是他自己动手整理了一个人物清单，一共300多人，
+            <a class="read-more" href="/2022/08/02/2022-8-3-%E8%B4%B9%E9%87%8C%E6%96%AF%E7%9A%8411%E4%B8%AA%E5%A5%BD%E9%97%AE%E9%A2%98/"> ... </a>
+        </div>
+        <div class="post-date">2022.08.02</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2020/12/16/2020-12-16-%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%906P%E6%A8%A1%E5%9E%8B/">人力资源6B模型</a>
+        <div class="post-except">
+            6B模型知识经济时代，管理者愈发意识到，无论是立稳脚跟，还是基业常青，最关键的驱动因子归根结底就是员工，员工整体价值的现状和走势实际上在相当程度上影响着企业现在和未来的行走曲线。因此，曾经不起眼的员工管理变得越发具有战略意义。人力资源管理大师Ulrich基于对全球人力资源管理理论和最佳实践的追踪研究，提出员工管理之6B模型。
 
+员工聘用（Buying）就员工管理而言，员工聘用可谓是第一道关口。俗话说，良好的开始是成功的一半！因此，如果人力资源部门对此不严格把关、不精挑细选的话
+            <a class="read-more" href="/2020/12/16/2020-12-16-%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%906P%E6%A8%A1%E5%9E%8B/"> ... </a>
+        </div>
+        <div class="post-date">2020.12.16</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2020/12/10/2020-12-11-GXM%E6%94%BF%E5%A7%94%E8%AE%AD%E7%BB%83%E8%90%A5%E7%AC%AC%E4%B8%80%E6%9C%9F/">GXM政委训练营第一期</a>
+        <div class="post-except">
+            
+
+
+|  &amp;nbsp;章节&amp;nbsp;  | &amp;nbsp; 录音 &amp;nbsp;  || :———— | : ———— || 第一章&amp;nbsp; | &amp;nbsp; &amp;nbsp;  || 第二章&amp;nbsp; | &amp;nbsp; &amp;nbsp;  || 第三章&amp;nbsp; | &amp;nbsp; &amp;nbsp;  || 第四章&amp;nbsp; | &amp;nbsp; &amp;nbs
+            <a class="read-more" href="/2020/12/10/2020-12-11-GXM%E6%94%BF%E5%A7%94%E8%AE%AD%E7%BB%83%E8%90%A5%E7%AC%AC%E4%B8%80%E6%9C%9F/"> ... </a>
+        </div>
+        <div class="post-date">2020.12.10</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2020/12/10/2020-12-11-%E4%B8%89%E5%A4%A7%E7%AE%A1%E7%90%86%E5%A4%A7%E5%B8%88%E4%B8%80%E6%9C%AC%E6%90%9E%E5%AE%9A/">三大管理大师一本搞定</a>
+        <div class="post-except">
+            
+|  &amp;nbsp;章节&amp;nbsp;  | &amp;nbsp; 录音 &amp;nbsp;  || :———— | : ———— || 开篇&amp;nbsp; | &amp;nbsp; &amp;nbsp;  || 第一章&amp;nbsp; | &amp;nbsp; &amp;nbsp;  || 第二章&amp;nbsp; | &amp;nbsp; &amp;nbsp;  || 第三章&amp;nbsp; | &amp;nbsp; &amp;nbsp; 
+            <a class="read-more" href="/2020/12/10/2020-12-11-%E4%B8%89%E5%A4%A7%E7%AE%A1%E7%90%86%E5%A4%A7%E5%B8%88%E4%B8%80%E6%9C%AC%E6%90%9E%E5%AE%9A/"> ... </a>
+        </div>
+        <div class="post-date">2020.12.10</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2020/12/01/2020-12-1-%E6%88%91%E5%9B%BDHRBP%E8%83%9C%E4%BB%BB%E5%8A%9B%E7%A0%94%E7%A9%B6/">我国 HRBP 胜任力研究</a>
+        <div class="post-except">
+                作者情况：
+    刘松博（通讯作者），中国人民大学劳动人事学院，教授、博士。电子邮箱：
+    Liusb@ruc.edu.cn。
+    裴珊珊，优信拍（北京）信息科技有限公司，
+    HRBP。
+    梁爽，中国人民大学劳动人事学院，本科生。
+
+内容摘要 随着人力资源管理转型需求的出现，HRBP 作为人力资源与业务部门的桥梁，成为 有力的转型工具，然而在管理实践中却面临诸多挑战。本文基于目前国内 HRBP 职位需求及 出现的问题，尝试探究我国 HRBP 胜任
+            <a class="read-more" href="/2020/12/01/2020-12-1-%E6%88%91%E5%9B%BDHRBP%E8%83%9C%E4%BB%BB%E5%8A%9B%E7%A0%94%E7%A9%B6/"> ... </a>
+        </div>
+        <div class="post-date">2020.12.01</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2020/10/29/2020-10-30-%E5%AD%A6%E4%B9%A0%E9%9A%8F%E7%AC%94/">学习随笔</a>
+        <div class="post-except">
+            缘由：新团队有集体学习的文化，课程都是核心骨干，帮其建立管理和思考体系。坚持一段时间后收获很大，被动变主动都过程很有帮助
+|  &amp;nbsp;书籍名称&amp;nbsp;  | &amp;nbsp; 作者 &amp;nbsp;  | &amp;nbsp; 电子版&amp;nbsp;  | &amp;nbsp; 备注 &amp;nbsp; || :———— | : ———— | :———— | :———— || 《三大管理学大师一本搞定 》&amp;nbsp; | &am
+            <a class="read-more" href="/2020/10/29/2020-10-30-%E5%AD%A6%E4%B9%A0%E9%9A%8F%E7%AC%94/"> ... </a>
+        </div>
+        <div class="post-date">2020.10.29</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2019/03/29/2019-03-29-%E5%AE%9E%E4%B9%A0%E6%80%BB%E7%BB%93/">实习总结（文静）</a>
+        <div class="post-except">
+            1、核心工作职责
+·协助HRG招聘，包括找简历、HR面试、与业务部门约面试、候选人面试跟进、谈offer
+·支撑标注团队，包括招聘、文化建设、干部选拔、培训、绩效面谈、员工关系管理
+
+·协助处理行政事务，包括采购、报销、办公室清洁、福利活动、设备维修、资产管理
+·协助处理政府事务，包括领导接待、展厅讲解、各类政企联动会议参与和活动举办
+·处理领导交代的其他事务性工作
+2、实习期间主要负责的招聘项目
+2018年8月数据标注员招聘执行
+2018年10月数据标注员招聘执行
+2018
+            <a class="read-more" href="/2019/03/29/2019-03-29-%E5%AE%9E%E4%B9%A0%E6%80%BB%E7%BB%93/"> ... </a>
+        </div>
+        <div class="post-date">2019.03.29</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2018/09/20/2018-09-20-%E5%85%B3%E4%BA%8E%E7%BE%A4%E9%9D%A2/">关于群面（文静整理）</a>
+        <div class="post-except">
+            面试其实只是一种形式，我们还可以Link候选人去进行沟通，但是现在很多公司还是希望有一个正式的方式来进行双方信息的互换。针对哪些岗位采用什么样的面试方式能够达到一个高效而且准确的结果？此次话题讨论群面，群面只是一种形式，我们要想清楚群面的目的，我们是希望达到什么样的结果，我们为什么要选择这样的形式。哪些岗位适合群面的方式来考察候选人，群面有哪些步骤和方式，采用的群面形式是无领导小组讨论还是1VN还是NV1，下面对这三种类型进行一个概述。
+
+形式①：无领导小组讨论，这是很多公司
+            <a class="read-more" href="/2018/09/20/2018-09-20-%E5%85%B3%E4%BA%8E%E7%BE%A4%E9%9D%A2/"> ... </a>
+        </div>
+        <div class="post-date">2018.09.20</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2018/09/20/2018-09-20-%E9%9D%A2%E8%AF%95%E9%82%80%E7%BA%A6/">关于约面（黎媛整理）</a>
+        <div class="post-except">
+            本次约面总结主要包含邀约非主动投递候选者的约面流程和沟通技巧。
+招聘场景：
+岗位的简历投递量不大或公司急招，我们需要通过主动搜索简历来增加候选人数量和缩短招聘时间。主动搜索到的侯选人对公司和岗位并不了解，在邀约这些候选人时，需要有一些特别要注意的地方。邀约流程：
+
+
+沟通技巧：
+
+现有资料基础上充分了解候选者
+
+  当前离职的候选者应约面试及入职的几率较高；在职看机会的候选者需用发展机会来吸引应约面试；工作3年经验下的候选人更关注平台与发展机会，可结合行业前景与公司背景去深入
+            <a class="read-more" href="/2018/09/20/2018-09-20-%E9%9D%A2%E8%AF%95%E9%82%80%E7%BA%A6/"> ... </a>
+        </div>
+        <div class="post-date">2018.09.20</div>
+    </div>
+    
 </div>
-        <div class="row mt-2">
-  
-    <div class="eight columns">
-      <p id="madewith">Made with ❤ and
-        <a class="footer-link icon" href="https://hexo.io" target="_blank" style="text-decoration: none;" rel="noreferrer" aria-label="Hexo.io">
-        <svg class="hexo svg-hov" width="14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hexo.js</title><path d="M12 .007L1.57 6.056V18.05L12 23.995l10.43-6.049V5.952L12 .007zm4.798 17.105l-.939.521-.939-.521V12.94H9.08v4.172l-.94.521-.938-.521V6.89l.939-.521.939.521v4.172h5.84V6.89l.94-.521.938.521v10.222z"/></svg>
-        </a>
-        
-        at <a href="https://en.wikipedia.org/wiki/Earth" target="_blank" rel="noreferrer">Earth</a>.</p>
-        
-    </div>
 
-    <!-- Sepcial thanks to https://simpleicons.org/ for the icons -->
-    <div class="four columns mb-3 posisi" >
-      
-      <a class="ml-0 footer-link icon" href="https://github.com/adisaktijrs" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="GitHub">
-        <svg class="github svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-      </a>
-      
-
-      
-
-      
-
-      
-
-      
-
-    </div>
-  
+<div class="paginator">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">下一页</a>
 </div>
 
-      </div>
+                <div class="footer">
+    <span>Copyright © 2022 Harte&#39;树洞</span>
+    <span>Theme Designed By <a target="_blank" href="">這Li</a></span>
+</div>
 
-    </div>
 
-  </div>
-  <script src="/js/nanobar.min.js"></script>
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
 
-  <script>
-    var options = {
-      classname: 'nanobar',
-      id: 'myNanobar'
-    };
-    var nanobar = new Nanobar(options);
-    nanobar.go(30);
-    nanobar.go(76);
-    nanobar.go(100);
-  </script>
 
-</body>
+<script src="/js/highlight.min.js"></script>
 
+
+<script src="/js/highlightjs-line-numbers.js"></script>
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+        </div>
+    </body>
 </html>

@@ -1,194 +1,50 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>Harte&#39;树洞 | 一个HR的从业记录</title>
+    
+<link rel="stylesheet" href="/css/reset.css">
 
-<head>
+    
+<link rel="stylesheet" href="/css/style.css">
 
-  <!-- Minima -->
-  <!-- Hexo theme created by @adisaktijrs -->
+    
+<link rel="stylesheet" href="/css/markdown.css">
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
+    
+<link rel="stylesheet" href="/css/fonts.css">
 
-  
-  <title>HOWTO Be more productive译文</title>
-  
-  <link rel="sitemap" href="http://example.comsitemap.xml,sitemap.txt" />
-  
-  <link rel="canonical" href="http://example.com/2015/02/27/2015-02-27-HOWTO%20Be%20more%20productive%E8%AF%91%E6%96%87/">
-  
-  <meta name="description" content="互联网之子-Aaron Swartz曾在博客aaronsw.com发布过一篇文章 《HOWTO: Be more productive》(如何变得更加高效) 看完纪录片《互联网之子后》后对Aaron Swartz的钦佩油然而生。所以也决定把这篇不错的文章翻译出来。附：纪录片《互联网之子后》The I">
-  
-  
-  <meta name="author" content="John Doe">
-  
-  
-  
-  <meta property="og:site_name" content="Harte" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="HOWTO Be more productive译文" />
-  
-  <meta property="og:description" content="互联网之子-Aaron Swartz曾在博客aaronsw.com发布过一篇文章 《HOWTO: Be more productive》(如何变得更加高效) 看完纪录片《互联网之子后》后对Aaron Swartz的钦佩油然而生。所以也决定把这篇不错的文章翻译出来。附：纪录片《互联网之子后》The I">
-  
-  <meta property="og:url" content="http://example.com/2015/02/27/2015-02-27-HOWTO%20Be%20more%20productive%E8%AF%91%E6%96%87/" />
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="HOWTO Be more productive译文">
-  
-  <meta name="twitter:description" content="互联网之子-Aaron Swartz曾在博客aaronsw.com发布过一篇文章 《HOWTO: Be more productive》(如何变得更加高效) 看完纪录片《互联网之子后》后对Aaron Swartz的钦佩油然而生。所以也决定把这篇不错的文章翻译出来。附：纪录片《互联网之子后》The I">
-  
-  
-  
-  
-  <meta name="twitter:url" content="http://example.com/2015/02/27/2015-02-27-HOWTO%20Be%20more%20productive%E8%AF%91%E6%96%87/" />
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Preload fonts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="preload" href="/fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-<link rel="stylesheet" href="/css/normalize.css">
-
-  
-<link rel="stylesheet" href="/css/skeleton.css">
-
-  
-<link rel="stylesheet" href="/css/custom.css">
-
-  
-<link rel="stylesheet" href="/css/prism-dark.css">
-
-  
-<link rel="stylesheet" href="/css/prism-line-numbers.css">
-
-  <!-- User css -->
-  
-  
-<link rel="stylesheet" href="/css/user.css">
-
-  
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="/images/favicon.png">
-
-  <!-- Custom Theme Color Style
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <style>
-  a:not(.icon) {
-    text-decoration-color: #0FA0CE;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 50%,
-      #0FA0CE 50%
-    );
-  }
-  blockquote {
-    border-left: 8px solid #0FA0CE;
-  }
-  .nanobar .bar {
-    background: #0FA0CE;
-  }
-  .button.button-primary:hover,
-  button.button-primary:hover,
-  input[type="submit"].button-primary:hover,
-  input[type="reset"].button-primary:hover,
-  input[type="button"].button-primary:hover,
-  .button.button-primary:focus,
-  button.button-primary:focus,
-  input[type="submit"].button-primary:focus,
-  input[type="reset"].button-primary:focus,
-  input[type="button"].button-primary:focus {
-    background-color: #0FA0CE;
-    border-color: #0FA0CE;
-  }
-  input[type="email"]:focus,
-  input[type="number"]:focus,
-  input[type="search"]:focus,
-  input[type="text"]:focus,
-  input[type="tel"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  textarea:focus,
-  select:focus {
-    border: 1px solid #0FA0CE;
-  }
-</style>
-
-  <!-- Google Analytics (With Privacy Settings On)
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-
-  
-  <script src="/js/pic.min.js" defer></script>
-  
-
-  
-
-<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Harte" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Harte'树洞" type="application/atom+xml">
 </head>
-
-<body>
-  <div class="container">
-    <div class="row">
-      <div>
-
-        <div class="row">
-  <div class="two columns" style="max-width: 50px">
-    <h1 class="mt-2 mode">
-      <div onclick=setDarkMode(true) id="darkBtn">🌑</div>
-      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>☀️</div>
-      <script >
-        if (localStorage.getItem('preferredTheme') == 'dark') {
-          setDarkMode(true)
-        }
-        function setDarkMode(isDark) {
-          var darkBtn = document.getElementById('darkBtn')
-          var lightBtn = document.getElementById('lightBtn')
-          if (isDark) {
-            lightBtn.style.display = "block"
-            darkBtn.style.display = "none"
-            localStorage.setItem('preferredTheme', 'dark');
-          } else {
-            lightBtn.style.display = "none"
-            darkBtn.style.display = "block"
-            localStorage.removeItem('preferredTheme');
-          }
-          document.body.classList.toggle("darkmode");
-        }
-      </script>
-    </h1>
-  </div>
-
-  <div class="six columns ml-1">
-    <h1 class="mt-2">
-      日拱一卒
-    </h1>
-  </div>
-
-  <div class="twelve columns">
-    <div class="row">
-      <div class="nine columns left">
- 	<a href="/">首页</a>
-        
-        
-      </div>
-    </div>
-    <hr style="margin-bottom: 2.6rem">
-  </div>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="post-header">
+    <a class="logo" href="/">Harte&#39;树洞</a>
+    <a class="go-home" href="/">
+        <svg width="8" height="14" viewBox="0 0 8 14">
+            <path d="M7 1L1 7l6 6" stroke="#000" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </a>
 </div>
+                
+                <div class="post-main">
 
-        <div class="trans">
-            <h2>HOWTO Be more productive译文</h2>
+    
+        <div class="post-main-title">
+            HOWTO Be more productive译文
+        </div>
+        <div class="post-meta">
+            2015-02-27
+        </div>
+    
 
-  <p>互联网之子-Aaron Swartz曾在博客aaronsw.com发布过一篇文章</p>
+    <div class="post-md">
+        <p>互联网之子-Aaron Swartz曾在博客aaronsw.com发布过一篇文章</p>
 <p><a target="_blank" rel="noopener" href="http://www.aaronsw.com/weblog/productivity">《HOWTO: Be more productive》</a>(如何变得更加高效)</p>
 <p>看完纪录片《互联网之子后》后对Aaron Swartz的钦佩油然而生。所以也决定把这篇不错的文章翻译出来。附：<br><a target="_blank" rel="noopener" href="http://harte01.u.qiniudn.com/The%20Internet's%20Own%20Boy.torrent">纪录片《互联网之子后》The Internet’s Own Boy高清版下载地址</a></p>
 <p><img src="http://pic.yupoo.com/lamentchina_v/E7dxPFKW/sm24p.jpg" alt="Aaron swartz"></p>
@@ -237,66 +93,30 @@
 <p>你不想做的过火。有时候如果你真的在浪费时间，你会变得心烦意乱。相较于坐下来阅读新闻，帮助其他人搞定他们的问题更有意义。那就是为什么达成约定是一个好方法：当你没有专注的做事的时候你可以被打扰。</p>
 <p>未完待续。。。。。</p>
 
-  <p><a class="classtest-link" href="/tags/Aaron-Swartz/" rel="tag">Aaron Swartz</a> — 2015年2月27日</p>
-  
+    </div>
+
+</div>
+                <div class="footer">
+    <span>Copyright © 2022 Harte&#39;树洞</span>
+    <span>Theme Designed By <a target="_blank" href="">這Li</a></span>
+</div>
 
 
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
+
+
+<script src="/js/highlight.min.js"></script>
+
+
+<script src="/js/highlightjs-line-numbers.js"></script>
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
         </div>
-        <div class="row mt-2">
-  
- 
-
-</div>
-        <div class="row mt-2">
-  
-    <div class="eight columns">
-      <p id="madewith">Made with ❤ and
-        <a class="footer-link icon" href="https://hexo.io" target="_blank" style="text-decoration: none;" rel="noreferrer" aria-label="Hexo.io">
-        <svg class="hexo svg-hov" width="14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hexo.js</title><path d="M12 .007L1.57 6.056V18.05L12 23.995l10.43-6.049V5.952L12 .007zm4.798 17.105l-.939.521-.939-.521V12.94H9.08v4.172l-.94.521-.938-.521V6.89l.939-.521.939.521v4.172h5.84V6.89l.94-.521.938.521v10.222z"/></svg>
-        </a>
-        
-        at <a href="https://en.wikipedia.org/wiki/Earth" target="_blank" rel="noreferrer">Earth</a>.</p>
-        
-    </div>
-
-    <!-- Sepcial thanks to https://simpleicons.org/ for the icons -->
-    <div class="four columns mb-3 posisi" >
-      
-      <a class="ml-0 footer-link icon" href="https://github.com/adisaktijrs" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="GitHub">
-        <svg class="github svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-      </a>
-      
-
-      
-
-      
-
-      
-
-      
-
-    </div>
-  
-</div>
-
-      </div>
-
-    </div>
-
-  </div>
-  <script src="/js/nanobar.min.js"></script>
-
-  <script>
-    var options = {
-      classname: 'nanobar',
-      id: 'myNanobar'
-    };
-    var nanobar = new Nanobar(options);
-    nanobar.go(30);
-    nanobar.go(76);
-    nanobar.go(100);
-  </script>
-
-</body>
-
+    </body>
 </html>

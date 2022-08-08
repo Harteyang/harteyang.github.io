@@ -1,406 +1,132 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport" />
+    <link rel="alternate icon" type="image/png" href="/img/favicon.png">
+    <title>Harte&#39;树洞 | 一个HR的从业记录</title>
+    
+<link rel="stylesheet" href="/css/reset.css">
 
-<head>
+    
+<link rel="stylesheet" href="/css/style.css">
 
-  <!-- Minima -->
-  <!-- Hexo theme created by @adisaktijrs -->
+    
+<link rel="stylesheet" href="/css/markdown.css">
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
+    
+<link rel="stylesheet" href="/css/fonts.css">
 
-  
-  <title>Harte</title>
-  
-  <link rel="sitemap" href="http://example.comsitemap.xml,sitemap.txt" />
-  
-  <link rel="canonical" href="http://example.com/page/2/">
-  
-  <meta name="description" content="">
-  
-  
-  <meta name="author" content="John Doe">
-  
-  
-  <meta property="og:image" content="http://example.com/images/thumbnail.jpg">
-  
-  
-  <meta property="og:site_name" content="Harte" />
-  <meta property="og:type" content="article" />
-  <meta property="og:title" content="Harte" />
-  
-  <meta property="og:description" content="">
-  
-  <meta property="og:url" content="http://example.com/page/2/" />
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Harte">
-  
-  <meta name="twitter:description" content="">
-  
-  
-  
-  <meta name="twitter:image" content="http://example.com/images/thumbnail.jpg">
-  
-  
-  <meta name="twitter:url" content="http://example.com/page/2/" />
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- Preload fonts
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="preload" href="/fonts/dm-serif-display-v4-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/fonts/inter-v2-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-<link rel="stylesheet" href="/css/normalize.css">
-
-  
-<link rel="stylesheet" href="/css/skeleton.css">
-
-  
-<link rel="stylesheet" href="/css/custom.css">
-
-  
-<link rel="stylesheet" href="/css/prism-dark.css">
-
-  
-<link rel="stylesheet" href="/css/prism-line-numbers.css">
-
-  <!-- User css -->
-  
-  
-<link rel="stylesheet" href="/css/user.css">
-
-  
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="/images/favicon.png">
-
-  <!-- Custom Theme Color Style
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <style>
-  a:not(.icon) {
-    text-decoration-color: #0FA0CE;
-    background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 50%,
-      #0FA0CE 50%
-    );
-  }
-  blockquote {
-    border-left: 8px solid #0FA0CE;
-  }
-  .nanobar .bar {
-    background: #0FA0CE;
-  }
-  .button.button-primary:hover,
-  button.button-primary:hover,
-  input[type="submit"].button-primary:hover,
-  input[type="reset"].button-primary:hover,
-  input[type="button"].button-primary:hover,
-  .button.button-primary:focus,
-  button.button-primary:focus,
-  input[type="submit"].button-primary:focus,
-  input[type="reset"].button-primary:focus,
-  input[type="button"].button-primary:focus {
-    background-color: #0FA0CE;
-    border-color: #0FA0CE;
-  }
-  input[type="email"]:focus,
-  input[type="number"]:focus,
-  input[type="search"]:focus,
-  input[type="text"]:focus,
-  input[type="tel"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  textarea:focus,
-  select:focus {
-    border: 1px solid #0FA0CE;
-  }
-</style>
-
-  <!-- Google Analytics (With Privacy Settings On)
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-
-  
-  <script src="/js/pic.min.js" defer></script>
-  
-
-  
-
-<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Harte" type="application/atom+xml">
+<meta name="generator" content="Hexo 6.2.0"><link rel="alternate" href="/atom.xml" title="Harte'树洞" type="application/atom+xml">
 </head>
-
-<body>
-  <div class="container">
-    <div class="row">
-      <div>
-
-        <div class="row">
-  <div class="two columns" style="max-width: 50px">
-    <h1 class="mt-2 mode">
-      <div onclick=setDarkMode(true) id="darkBtn">🌑</div>
-      <div onclick=setDarkMode(false) id="lightBtn" class=hidden>☀️</div>
-      <script >
-        if (localStorage.getItem('preferredTheme') == 'dark') {
-          setDarkMode(true)
-        }
-        function setDarkMode(isDark) {
-          var darkBtn = document.getElementById('darkBtn')
-          var lightBtn = document.getElementById('lightBtn')
-          if (isDark) {
-            lightBtn.style.display = "block"
-            darkBtn.style.display = "none"
-            localStorage.setItem('preferredTheme', 'dark');
-          } else {
-            lightBtn.style.display = "none"
-            darkBtn.style.display = "block"
-            localStorage.removeItem('preferredTheme');
-          }
-          document.body.classList.toggle("darkmode");
-        }
-      </script>
-    </h1>
-  </div>
-
-  <div class="six columns ml-1">
-    <h1 class="mt-2">
-      日拱一卒
-    </h1>
-  </div>
-
-  <div class="twelve columns">
-    <div class="row">
-      <div class="nine columns left">
- 	<a href="/">首页</a>
+    <body>
+        <div class="paper">
+            <div class="paper-main">
+                
+                    <div class="header">
+    <a class="logo" href="/">Harte&#39;树洞</a>
+    <ul class="nav">
         
+        <li><a href="/">首页</a></li>
         
-      </div>
-    </div>
-    <hr style="margin-bottom: 2.6rem">
-  </div>
+        <li><a href="/archives">归档</a></li>
+        
+    </ul>
 </div>
+                
+                <div class="post-list">
+    
+    <div class="post">
+        <a class="post-title" href="/2018/09/20/2018-09-20-%E6%A0%87%E6%B3%A8%E6%94%BB%E5%9D%9A%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/">数据标注攻坚招聘总结（文静）</a>
+        <div class="post-except">
+            如果没有图片请点击下载PDF
+一、	项目背景
+此次人员扩充截止时间为8月中旬。结合业务发展和成都site实际情况，公司计划在成都搭建一个”数据标注”团队，leader从北京调回。为了规避风险，我们此次招聘HC设定为30人，实际入职人数在22-30人之间都可。招聘方式为渠道合作–萌想科技（实习僧），定价为1000元&#x2F;人。
 
-        <div class="trans">
-          <div class="row">
-  <div class="column">
-    <!-- Main information, edit it on theme/_config.yml -->
-    <h2 class="mb-2"></h2>
-    <p>一枚人力资源从业者🇨🇳</p>
-    <p>积累跬步,立于现实,改变未来。</p>
-  </div>
-</div>
+二、	项目难点分析
 
-<h3>---最近更新---</h3>
-
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2022年8月4日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2022/08/04/%E6%83%B3%E9%80%9A%E8%BF%87%E5%A4%8D%E7%9B%98%E6%8F%90%E5%8D%87%E8%87%AA%E5%B7%B1%E7%9A%84%E5%8F%8D%E6%80%9D%E6%B7%B1%E5%BA%A6%EF%BC%882022%E5%B9%B48%E6%9C%884%E6%97%A5%201027%EF%BC%89/" >
-      
-        no title
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2022年8月2日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2022/08/02/2022-8-3-%E8%B4%B9%E9%87%8C%E6%96%AF%E7%9A%8411%E4%B8%AA%E5%A5%BD%E9%97%AE%E9%A2%98/" >
-      
-        no title
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2020年12月16日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2020/12/16/2020-12-16-%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%906P%E6%A8%A1%E5%9E%8B/" >
-      
-        人力资源6B模型
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2020年12月10日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2020/12/10/2020-12-11-GXM%E6%94%BF%E5%A7%94%E8%AE%AD%E7%BB%83%E8%90%A5%E7%AC%AC%E4%B8%80%E6%9C%9F/" >
-      
-        GXM政委训练营第一期
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2020年12月10日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2020/12/10/2020-12-11-%E4%B8%89%E5%A4%A7%E7%AE%A1%E7%90%86%E5%A4%A7%E5%B8%88%E4%B8%80%E6%9C%AC%E6%90%9E%E5%AE%9A/" >
-      
-        三大管理大师一本搞定
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2020年12月1日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2020/12/01/2020-12-1-%E6%88%91%E5%9B%BDHRBP%E8%83%9C%E4%BB%BB%E5%8A%9B%E7%A0%94%E7%A9%B6/" >
-      
-        我国 HRBP 胜任力研究
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2020年10月29日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2020/10/29/2020-10-30-%E5%AD%A6%E4%B9%A0%E9%9A%8F%E7%AC%94/" >
-      
-        学习随笔
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2019年3月29日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2019/03/29/2019-03-29-%E5%AE%9E%E4%B9%A0%E6%80%BB%E7%BB%93/" >
-      
-        实习总结（文静）
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2018年9月20日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2018/09/20/2018-09-20-%E5%85%B3%E4%BA%8E%E7%BE%A4%E9%9D%A2/" >
-      
-        关于群面（文静整理）
-      
-    </a>
-  </div>
-</div>
-
-<div class="row">
-
-  <div class="three columns left lit">
-    <p class="bottom">2018年9月20日</p>
-  </div>
-  <div class="nine columns left mb-3">
-    <a href="/2018/09/20/2018-09-20-%E9%9D%A2%E8%AF%95%E9%82%80%E7%BA%A6/" >
-      
-        关于约面（黎媛整理）
-      
-    </a>
-  </div>
-</div>
-
-
-<h4> <a href="/archives">更多...</a></h4>
-
+缺口22人，而整体时间只有12天，不到2周。
+大部分候选人对”数据标注”工作非常陌生，沟通起来需要更多的时间和耐心；
+除了第
+            <a class="read-more" href="/2018/09/20/2018-09-20-%E6%A0%87%E6%B3%A8%E6%94%BB%E5%9D%9A%E9%A1%B9%E7%9B%AE%E6%80%BB%E7%BB%93/"> ... </a>
         </div>
-        <div class="row mt-2">
-  
- 
+        <div class="post-date">2018.09.20</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2016/06/13/2016-06-13-%E6%88%91%E7%BB%8F%E5%B8%B8%E6%8F%90%E8%B5%B7%E7%9A%84Jessica/">我经常提起的Jessica</a>
+        <div class="post-except">
+            Jessica是我在IObit时的领导。也是我一起工作过的时间最短的领导，算是我HR道路上的一个小插曲，但也是我比较认可的一位前辈。她完全有资格用自己的经历改变大家对生活的态度。
+现在还记得她说的那句话：“不要轻易的否定你的领导，因为至少他有一点是比你优秀的，之所以成为你的领导是因为他比你更有价值，而这点价值就是你最应该学习和提升的地方。”
 
+转载Jessica写给小伙伴的一封信。各位小伙伴：           好久不见！           由于身体原因我已决定不再回公司
+            <a class="read-more" href="/2016/06/13/2016-06-13-%E6%88%91%E7%BB%8F%E5%B8%B8%E6%8F%90%E8%B5%B7%E7%9A%84Jessica/"> ... </a>
+        </div>
+        <div class="post-date">2016.06.13</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2016/04/22/2016-04-22-%E7%A6%BB%E8%81%8C%E5%88%86%E4%BA%AB%EF%BC%8C%E5%85%B3%E4%BA%8E%E6%8B%9B%E8%81%98/">离职分享，关于招聘</a>
+        <div class="post-except">
+            IObit工作三年半从公司创业到上市，经历了最宝贵的三年半，临走时老大要求我做一个分享，于是又了下面的记录：2012年第一个工作日加入IObit，在这里三年半的时间了，现在即将离开，颇多不舍，给分享一些我在这里的收获，希望对大家工作有所帮助。记得Jessica面试的时候问过我一个问题“你觉得HR部门在公司扮演什么样的角色？”我当时的答案是“服务部门的角色，服务业务部门、服务公司管理。”很一般的回答，但是我看到Jessica脸上漏出了微笑。是的过去的三年半我们一直以这样的定位去
+            <a class="read-more" href="/2016/04/22/2016-04-22-%E7%A6%BB%E8%81%8C%E5%88%86%E4%BA%AB%EF%BC%8C%E5%85%B3%E4%BA%8E%E6%8B%9B%E8%81%98/"> ... </a>
+        </div>
+        <div class="post-date">2016.04.22</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2015/02/27/2015-02-27-HOWTO%20Be%20more%20productive%E8%AF%91%E6%96%87/">HOWTO Be more productive译文</a>
+        <div class="post-except">
+            互联网之子-Aaron Swartz曾在博客aaronsw.com发布过一篇文章
+《HOWTO: Be more productive》(如何变得更加高效)
+看完纪录片《互联网之子后》后对Aaron Swartz的钦佩油然而生。所以也决定把这篇不错的文章翻译出来。附：纪录片《互联网之子后》The Internet’s Own Boy高清版下载地址
+
+
+“With all the time you spend watching TV,” he tells me, “you co
+            <a class="read-more" href="/2015/02/27/2015-02-27-HOWTO%20Be%20more%20productive%E8%AF%91%E6%96%87/"> ... </a>
+        </div>
+        <div class="post-date">2015.02.27</div>
+    </div>
+    
+    <div class="post">
+        <a class="post-title" href="/2014/02/27/2014-02-27-%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E5%88%B0%E5%9C%BA%E9%9D%A2%E8%AF%95%E7%8E%87/">如何提高面试邀约到场率</a>
+        <div class="post-except">
+            面试到场率是困扰很多HR的问题，按简历来源可将求职者分为三类：主动投递、HR搜索和内外部推荐，出现面试缺席的多为前两者；
+主动投递的简历分为本人投递和委托待投，本人投递简历的求职者往往对职位名称和描述有一定了解，而委托投递则有可能仅仅因为职位分类或者关键词出现在职位当中，HR从各渠道搜集回来的简历多数是持观望状态或者还未下定决心重新找工作。所以在面试邀约过程中到场情况我们可以做一下排序：本人投递》委托投递》HR搜索，本人投递的简历通知
+
+不能到场大多是因为一些突发状况或客观因
+            <a class="read-more" href="/2014/02/27/2014-02-27-%E5%A6%82%E4%BD%95%E6%8F%90%E9%AB%98%E5%88%B0%E5%9C%BA%E9%9D%A2%E8%AF%95%E7%8E%87/"> ... </a>
+        </div>
+        <div class="post-date">2014.02.27</div>
+    </div>
+    
 </div>
-        <div class="row mt-2">
-  
-    <div class="eight columns">
-      <p id="madewith">Made with ❤ and
-        <a class="footer-link icon" href="https://hexo.io" target="_blank" style="text-decoration: none;" rel="noreferrer" aria-label="Hexo.io">
-        <svg class="hexo svg-hov" width="14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>Hexo.js</title><path d="M12 .007L1.57 6.056V18.05L12 23.995l10.43-6.049V5.952L12 .007zm4.798 17.105l-.939.521-.939-.521V12.94H9.08v4.172l-.94.521-.938-.521V6.89l.939-.521.939.521v4.172h5.84V6.89l.94-.521.938.521v10.222z"/></svg>
-        </a>
-        
-        at <a href="https://en.wikipedia.org/wiki/Earth" target="_blank" rel="noreferrer">Earth</a>.</p>
-        
-    </div>
 
-    <!-- Sepcial thanks to https://simpleicons.org/ for the icons -->
-    <div class="four columns mb-3 posisi" >
-      
-      <a class="ml-0 footer-link icon" href="https://github.com/adisaktijrs" target="_blank" style="text-decoration: none" rel="noreferrer" aria-label="GitHub">
-        <svg class="github svg-hov" width="18" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-      </a>
-      
-
-      
-
-      
-
-      
-
-      
-
-    </div>
-  
+<div class="paginator">
+    <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
 </div>
 
-      </div>
+                <div class="footer">
+    <span>Copyright © 2022 Harte&#39;树洞</span>
+    <span>Theme Designed By <a target="_blank" href="">這Li</a></span>
+</div>
 
-    </div>
 
-  </div>
-  <script src="/js/nanobar.min.js"></script>
+<link rel="stylesheet" href="/css/a11y-dark.min.css">
 
-  <script>
-    var options = {
-      classname: 'nanobar',
-      id: 'myNanobar'
-    };
-    var nanobar = new Nanobar(options);
-    nanobar.go(30);
-    nanobar.go(76);
-    nanobar.go(100);
-  </script>
 
-</body>
+<script src="/js/highlight.min.js"></script>
 
+
+<script src="/js/highlightjs-line-numbers.js"></script>
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+
+            </div>
+        </div>
+    </body>
 </html>
