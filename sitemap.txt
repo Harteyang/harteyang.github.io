@@ -10,7 +10,7 @@ http://example.com/2018/09/20/2018-09-20-%E9%9D%A2%E8%AF%95%E9%82%80%E7%BA%A6/
 http://example.com/2018/09/20/2018-09-20-biaozhugognjianzongjie/
 http://example.com/
 http://example.com/tags/%E5%B7%A5%E4%BD%9C/
-http://example.com/categories/%E6%8B%9B%E8%81%98/
 http://example.com/categories/%E6%9D%82%E8%AE%B0/
+http://example.com/categories/%E6%8B%9B%E8%81%98/
 http://example.com/categories/%E9%9D%A2%E8%AF%95-%E6%8B%9B%E8%81%98/
 http://example.com/categories/%E6%80%BB%E7%BB%93/
